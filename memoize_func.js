@@ -20,3 +20,13 @@ toUpperMemoized('Alex');
 toUpperMemoized('Max');
 
 
+const calculateVolumeAndArea = (num) => {
+    if (typeof num === 'number' || Number.isInteger(num) || num < 0) {
+        const volumeCube = num * num * num;
+    const square = 6 * (num * num);
+    return `Объем куба: ${volumeCube}, площадь всей поверхности: ${square}`;
+    } else {
+        return 'При вычислении произошла ошибка';
+    }
+};
+calculateVolumeAndArea(5);
